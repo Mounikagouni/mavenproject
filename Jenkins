@@ -11,12 +11,12 @@ git 'https://github.com/Mounikagouni/mavenproject.git'
 }
 stage('building with maven'){
 steps{
-sh mvn clean install
+sh 'mvn clean install'
 }
 }
 stage('deploy stage'){
 steps{
-sh "sudo su - mounika -c 'ansible-playbook java-test.yml"
+sh "sudo su - mounika -c 'ansible-playbook java-test.yml'"
 }
 }
 }
