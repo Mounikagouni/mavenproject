@@ -1,0 +1,20 @@
+pipeline{
+ agent any
+stages{
+stage('buildstage'){
+steps{
+sh 'uptime'
+}
+}
+stage('teststage'){
+steps{
+sh 'uptime'
+}
+}
+stage('deploytage'){
+steps{
+sh 'uptime'
+}
+}
+}
+}
