@@ -3,17 +3,17 @@ pipeline{
 stages{
 stage('buildstage'){
 steps{
-sh 'uptime'
+sh 'date'
 }
 }
 stage('teststage'){
 steps{
-sh 'uptime'
+sh 'date'
 }
 }
 stage('deploytage'){
 steps{
-sh 'uptime'
+sh 'date'
 }
 }
 }
